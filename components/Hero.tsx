@@ -3,8 +3,24 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import ResumeButton from "./ResumeButton";
 
 const Hero = () => {
+  /* const handleDownload = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = "./public/AyushiPandayResume 5.pdf";
+    link.download = "YourName_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const ResumeButton = () => (
+    <a href="#about" onClick={handleDownload}>
+      <MagicButton title="Resume" icon={<FaLocationArrow />} position="right" />
+    </a>
+  );
+ */
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -32,24 +48,19 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic With Next.js
+          <h2 className="uppercase tracking-widest text-lg text-center text-blue-100 max-w-80">
+            👋 Hello World!
           </h2>
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Hi! I'm Ayushi Panday, a Web & AI/ML Developer based in India."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Ayushi, a Web & AI/ML Developer based in India.
+            Experienced in web development and AI/ML, I build innovative web
+            applications and advanced machine learning models.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <ResumeButton />
         </div>
       </div>
     </div>
