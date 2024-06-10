@@ -62,7 +62,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "ayushipanday22@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -93,20 +93,6 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
-          } `}
-        >
-          {spareImg && (
-            <img
-              src={spareImg}
-              alt={spareImg}
-              //   width={220}
-              className="object-cover object-center w-full h-full"
-            />
-          )}
-        </div>
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
@@ -132,32 +118,35 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
-
           {/* Tech stack list div */}
-          {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+          {id === 1 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute right-1/2 transform translate-x-1/2 items-center">
+              {" "}
+              {/* Changed classNames */}
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 items-center">
+                {" "}
+                {/* Changed classNames */}
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+          lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 items-center">
+                {" "}
+                {/* Changed classNames */}
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+          lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -165,6 +154,7 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
+
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
