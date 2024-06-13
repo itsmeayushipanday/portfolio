@@ -47,9 +47,6 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
@@ -118,40 +115,34 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* Tech stack list div */}
           {id === 1 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute right-1/2 transform translate-x-1/2 items-center">
-              {" "}
-              {/* Changed classNames */}
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 items-center">
-                {" "}
-                {/* Changed classNames */}
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-          lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 items-center">
-                {" "}
-                {/* Changed classNames */}
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-          lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+            <div className="w-full flex flex-wrap m-5 justify-center">
+              {[
+                "Python",
+                "PyTorch",
+                "Tensorflow",
+                "Keras",
+                "Numpy",
+                "Pandas",
+                "Data Cleaning",
+                "Data Visualization",
+                "ReactJS",
+                "Express",
+                "Typescript",
+                "Javascript",
+                "GitHub",
+                "Git",
+                "Jupyter",
+                "VS Code",
+              ].map((skill, index) => (
+                <div key={index} className="mb-4 mr-4">
+                  <MagicButton title={skill}>
+                    <div className="w-full p-4 flex justify-center items-center text-center bg-[#10132E] text-white text-lg font-semibold rounded-lg shadow-lg">
+                      {skill}
+                    </div>
+                  </MagicButton>
+                </div>
+              ))}
             </div>
           )}
 

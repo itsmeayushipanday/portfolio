@@ -1,7 +1,7 @@
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "Skills", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -11,7 +11,7 @@ export const gridItems = [
     title: "My tech stack",
     description: "",
     className:
-      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] flex flex-col items-center", // Changed className
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] flex flex-col items-center ", // Changed className
     imgClassName: "w-full h-full",
     titleClassName: "justify-center", // Changed titleClassName
     img: "",
