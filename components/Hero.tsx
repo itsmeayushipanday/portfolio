@@ -1,26 +1,9 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
 import ResumeButton from "./ResumeButton";
 
 const Hero = () => {
-  /* const handleDownload = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const link = document.createElement("a");
-    link.href = "./public/AyushiPandayResume 5.pdf";
-    link.download = "YourName_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-  const ResumeButton = () => (
-    <a href="#about" onClick={handleDownload}>
-      <MagicButton title="Resume" icon={<FaLocationArrow />} position="right" />
-    </a>
-  );
- */
   return (
     <div className="pb-20 pt-36">
       <div>
