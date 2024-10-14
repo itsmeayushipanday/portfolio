@@ -33,11 +33,11 @@ export const gridItems = [
 export const projectExperience = [
   {
     id: 1,
-    title: "Expense Splitter | Splitser",
-    desc: "An expense splitter application using React.js for the frontend, integrated with a Node.js and Express backend, fetching data through live API calls.",
+    title: "Exercise Zone",
+    desc: "An exercise management website, featuring over 1,000 exercises across 18 categories. Added features to displayexercises targeting the same muscle group. Integrated a real-time query response system using the Google Gemini API.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
-    link: "https://github.com/Devilcoder2/Expense-Splitter/tree/main",
+    link: "https://github.com/itsmeayushipanday/Exercise-Zone",
   },
   {
     id: 2,
@@ -48,12 +48,12 @@ export const projectExperience = [
     link: "https://github.com/itsmeayushipanday/DiabetesClassification_Using_KNN",
   },
   {
-    id: 3,
-    title: "Real-Time Tic-Tac-Toe",
-    desc: "A real-time Tic-Tac-Toe game using React.js, integrated with Socket.IO to enable two players to play the game in real-time with live updates.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-    link: "https://github.com/itsmeayushipanday/RealtimeGaming",
+    id: 1,
+    title: "Expense Splitter | Splitser",
+    desc: "An expense splitter application using React.js for the frontend, integrated with a Node.js and Express backend, fetching data through live API calls.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+    link: "https://github.com/Devilcoder2/Expense-Splitter/tree/main",
   },
   {
     id: 4,
@@ -64,6 +64,14 @@ export const projectExperience = [
     link: "https://github.com/itsmeayushipanday/Data-Augmentation-Using-DeepLearning",
   },
 
+  {
+    id: 3,
+    title: "Real-Time Tic-Tac-Toe",
+    desc: "A real-time Tic-Tac-Toe game using React.js, integrated with Socket.IO to enable two players to play the game in real-time with live updates.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp3.svg",
+    link: "https://github.com/itsmeayushipanday/RealtimeGaming",
+  },
   {
     id: 5,
     title: "Chatbot Using Python And Machine Learning",
